@@ -1,0 +1,11 @@
+<div class="holiday-details">
+<h2> US Holiday Details on {{getFullDate(selectedDate) | date:'fullDate' }}</h2>
+<div class="holiday-dates">
+<a [routerLink]="['/holidays']">US Holiday List 2015</a>
+<mat-card *ngFor="let date of detailsData">
+    <mat-card-title><b>Holiday Name: </b>{{date.name}}</mat-card-title>
+    <mat-card-subtitle>
+        <b>Is Public Holiday: </b>{{date.publc? 'Yes': 'No'}}</mat-card-subtitle>
+</mat-card>
+</div>
+</div>

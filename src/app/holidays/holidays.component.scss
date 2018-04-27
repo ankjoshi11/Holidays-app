@@ -1,0 +1,25 @@
+.container-list{
+    max-width: 1170px;
+    margin: auto;
+    h1{
+        text-align: center;
+    }
+}
+.content-list{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #bcbaba;
+    padding: 10px;
+    border-radius: 4px;
+    .mat-card{
+        width: 26%;
+        margin: 10px 16px;
+        background-color: #ececec;
+        a{
+            color:#000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="container-list">
+<h1>US Holidays For the Year 2015 </h1>
+<div class="content-list">
+   
+    <mat-card  *ngFor="let date of holidaysData">   
+        <a [routerLink]="['/details', date]">  
+        <mat-card-actions>
+                {{getFullDate(date) | date:'fullDate' }}
+        </mat-card-actions>
+    </a>   
+      </mat-card>
+</div>
+</div>
